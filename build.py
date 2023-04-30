@@ -62,3 +62,11 @@ shutil.copy(
     str(BASE_DIR / "src" / project / "resources" / "default_settings.json"),
     str(BASE_DIR / "dist"),
 )
+pyinstaller_versionfile.create_versionfile(
+    output_file=str(BASE_DIR / "version_file.txt"),
+    version=version + ".0",
+    file_description="Snooker Ball Tracker",
+    internal_name="Snooker Ball Tracker",
+    original_filename=project + ".exe",
+    product_name="Snooker Ball Tracker",
+    updated some code in build.py
